@@ -2,6 +2,12 @@ puts "What is your name?"
 name = gets.chomp
 puts "Hi #{name}! How old are you?"
 age = gets.chomp.to_i
+
+while age == 0
+puts "Sorry, you didn't enter a valid number. Please try again:"
+age = gets.chomp.to_i
+end
+
 till100 = 100 - age
 from100 = age - 100
 
