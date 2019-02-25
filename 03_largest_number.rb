@@ -19,13 +19,10 @@
 def largest_number (number_1, number_2)
   if !number_1.is_a?(Numeric) or !number_2.is_a?(Numeric)
       puts "This answer is invalid." #checking if its numeric
-
       elsif  number_1 > number_2
         puts "#{number_1}" 
-  
       elsif number_1 == number_2 
           puts "#{number_1} and #{number_2} are equal." #checking if equal
-  
       else 
           puts "#{number_2}"
   end  
