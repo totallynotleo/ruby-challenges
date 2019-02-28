@@ -43,11 +43,11 @@ puts "What drink would you like?"
 looping = true      #looping condition
 while looping == true
   puts "Type \"done\" when finished
-  Options: (c)ocktail, (b)eer, (w)ater"  #puts the options and gets the answer
+  Options: (c)ocktail, (b)eer, (w)ater"                 #puts the options and gets the answer
   drink_ordered = gets.chomp
-  
-  case drink_ordered #figures out what drink they want 
-    when "cocktail", "c"
+
+  case drink_ordered                                    #figures out what drink they want 
+    when "cocktail", "c", ""
       cocktail.add_one(:cocktail, drinklog) #3 lines add to the log, clear the screen and say its been ordered
       system"clear"
       cocktail.ordered
@@ -59,11 +59,11 @@ while looping == true
       water.add_one(:water, drinklog)
       system"clear"
       water.ordered
-    when "done"                                     #clears the loop
+    when "done", "d"                                     #clears the loop
       system"clear"
       puts "Thank you for ordering!"
       looping = false 
-    else                                            #else case
+    else                                                 #else case
       puts "Sorry, that is not a valid input"
   end 
 end 
