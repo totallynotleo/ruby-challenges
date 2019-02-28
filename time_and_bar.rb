@@ -5,6 +5,11 @@
 # - Create a complete sentence  that lets us know how you got to class and how long it took
 # - Print this complete sentence
 
+# time_to_class = "40 minutes"
+# method_of_transport = "Train"
+# puts "It took me #{time_to_class} to get to class, via #{method_of_transport}"
+
+
 
 # PART 2:
 # You are working at a bar where you have a current backlog of drinks to make:
@@ -19,7 +24,44 @@
 #   if they order a beer, add one to the number of beers you need to pour
 
 # Print the final drinks order so you know what to make
+backlog = ["cocktail", "cocktail", "cocktail", "water", "water", "beer", "beer", "beer", "beer", "beer", "beer"]
+cocktails = ["cocktail", "cocktail", "cocktail"] #an array full of cocktails to know how many there are
+waters = ["water", "water"] #array that keeps track of how many waters there are
+beers = ["beer", "beer", "beer", "beer", "beer", "beer"] # same for beer, duh
+looping = true #while loop condition
+while looping
+    puts "What drink would you like? (Options: (c)ocktail, (b)eer, (w)ater)
+    Type (q)uit when done"
+    drink_ordered = gets.chomp
+    case drink_ordered
+        when "cocktail", "c"
+            backlog << "cocktail"
+            cocktails << "cocktail"
+            puts "You have added 1 cocktail."
+        when "beer", "b"
+            backlog << "beer"
+            beers << "beer"
+            puts "You have added 1 beer."
+        when "water", "w"
+            backlog << "water"
+            waters << "water"
+            puts "You have added 1 water."
+        when "quit", "q"
+            looping = false
+    end 
+end  
 
+puts "You have to make #{backlog.length} drinks: #{cocktails.length} cockatails, #{beers.length} beers and #{waters.length} waters."
+
+cocktail_profit = (cocktails.length * (22 - 8))
+cocktail_profit.to_f.round(2) 
+beer_profit = beers.length * (12 - 3)
+water_profit = waters.length * (6 - 0.15)
+water_profit.to_f.round(2)
+totalprofit = cocktail_profit + beer_profit + water_profit
+
+puts "Your total profit has been $#{totalprofit}"
+puts "You have made $#{cocktail_profit} from cocktails, $#{beer_profit} from beers and $#{water_profit} from water."
 
 # Part Three:
 # Cocktails sell for $22, and cost $8 to make
