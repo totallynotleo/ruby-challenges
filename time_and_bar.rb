@@ -74,3 +74,5 @@ totalprofit = cocktail_profit + beer_profit + water_profit
 
 puts "Your total profit has been $#{totalprofit}"
 puts "You have made $#{cocktail_profit} from cocktails, $#{beer_profit} from beers and $#{water_profit} from water."
+
+#I MADE A BETTER VERSION USING CLASSES AND HASHES IN time_and_bar2.rb
