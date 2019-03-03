@@ -79,14 +79,14 @@ puts "You have #{drinklog.values.sum} drinks waiting:
 #{drinklog[:cocktail]} cocktails
 #{drinklog[:beer]} beers
 #{drinklog[:water]} glasses of water." #takes the values from the hash and interpolates them
-puts "You have made $#{total_profit} profit from in total. Would you like more information? y/n" #totalprofit
+puts "You have made $%.2f profit from in total. Would you like more information? y/n" %total_profit #totalprofit
 moreinfo = gets.chomp
 case moreinfo #lets them decide whether or not they want to get the full info breakdown for profit.
   when "yes", "y"
     puts  "You have made:
     $#{cocktail_profit} from cocktails 
     $#{beer_profit} from beer
-    $#{water_profit} from water"
+    $%.2f from water" %water_profit
   when "no", "n"
     puts "Ok. Have a good day & happy bartending!" #positivevibesonly
 end 
