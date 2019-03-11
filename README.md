@@ -15,18 +15,15 @@
     1. Push to master in your fork:<br/>
      `git push origin master`
 
-<<<<<<< HEAD
 ## List of challenge branches
-=======
-# List of challenge branches
->>>>>>> 83c12527614c5883557817f66bddd38944975dbb
 * 01_ruby_intro
 * 02_input_output
 * 03_largest_number
 * 04_sum_numbers
 * 05_in_array
 * 06_definition
-<<<<<<< HEAD
-=======
 * 07_included_once
->>>>>>> 83c12527614c5883557817f66bddd38944975dbb
+* 08_count_letters
+* 09_vowels
+* 10_unique
+* 11_fizzbuzz
