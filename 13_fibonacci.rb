@@ -27,7 +27,7 @@ def nthFibonacci(n)
     (2..n).each do |i|
         fib_array.push(fib_array[i-1] + fib_array[i-2])
     end 
-    return fib_array.last
+    return fib_array[n]
 end
 
 def recursive_fibonacci(n)
@@ -38,4 +38,5 @@ def recursive_fibonacci(n)
 #     return recursive_fibonacci(n-1) + recursive_fibonacci(n-2)
 # end
 end
+
 
