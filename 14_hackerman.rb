@@ -10,7 +10,7 @@
 # first_input = bob rob dob mob
 # second_input = kob fob dob
 puts "Please enter an input:"
-first_input = gets.chomp
+first_input = gets.chomp.downcase
 puts "Basic security please enter again."
 second_input = gets.chomp.downcase
 first_input = first_input.split(" ")
