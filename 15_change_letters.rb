@@ -31,4 +31,4 @@ for word in input do #iterate through that array of words
         wordarray << word
     end   
 end
-puts input
+
