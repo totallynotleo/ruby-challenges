@@ -34,8 +34,15 @@ def palindrome (string)
   end
 end
 
+
+
+
+
+
+
+
 def palindrome2 (string)
-  string.reverse == string
+  string.downcase.reverse == string.downcase
 end
 
 
