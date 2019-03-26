@@ -37,4 +37,9 @@
 * 17_combine_hashes
 * 18_find_errors
 * 19_balanced_number
+<<<<<<< HEAD
 * 20_descending_numbers
+=======
+* 20_descending_numbers
+* 21_sort_numbers
+>>>>>>> 8c04d27021a238ed168bba0dca4befe31c1c9749
