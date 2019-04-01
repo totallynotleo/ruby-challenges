@@ -28,10 +28,7 @@
 def first_non_repeating(input)
     inputarray = input.chars
     for letter in inputarray do
-    if inputarray.count(letter) == 1
-        first_non_repeating = letter
-        break    
-    end
+        first_non_repeating = letter if inputarray.count(letter) == 1 
     end
     first_non_repeating == nil ? false : first_non_repeating
 end
