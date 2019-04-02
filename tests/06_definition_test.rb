@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../06_definition'
+require_relative '../Completed/06_definition'
 
 class UniqueTest < Test::Unit::TestCase
   def test_definition_add_word

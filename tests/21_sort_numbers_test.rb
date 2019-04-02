@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../21_sort_numbers'
+require_relative '../Completed/21_sort_numbers'
 
 class SortNumbersTest < Test::Unit::TestCase
   def test_no_repeats

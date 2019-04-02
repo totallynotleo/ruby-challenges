@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../05_in_array'
+require_relative '../Completed/05_in_array'
 
 class InArrayTest < Test::Unit::TestCase
   def test_palindrome

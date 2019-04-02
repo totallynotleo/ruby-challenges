@@ -17,7 +17,5 @@
 
 
 def max_min(num_string)
-  array = num_string.split(" ")
-  array.map!{|x| x.to_i}
-  return "#{array.max} #{array.min}"
+  return "#{num_string.split(" ").map!{|x| x.to_i}.max} #{num_string.split(" ").map!{|x| x.to_i}.min}"
 end

@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../16_palindrome.rb'
+require_relative '../Completed/16_palindrome.rb'
 
 class PalindromTest < Test::Unit::TestCase
     def test_palindrome

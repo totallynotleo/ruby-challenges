@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../22_exes_ohs'
+require_relative '../Completed/22_exes_ohs'
 
 class ExesOhsTest < Test::Unit::TestCase
   def test_simple_two_chars_same_case

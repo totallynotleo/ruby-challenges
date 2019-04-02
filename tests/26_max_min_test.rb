@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../26_max_min'
+require_relative '../Completed/26_max_min'
 
 class MaxMinTest < Test::Unit::TestCase
   def test_basic_premise

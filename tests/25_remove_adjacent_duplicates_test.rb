@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../25_remove_adjacent_duplicates'
+require_relative '../Completed/25_remove_adjacent_duplicates'
 
 class RemoveAdjacentDuplicatesTest < Test::Unit::TestCase
   def test_no_duplicates

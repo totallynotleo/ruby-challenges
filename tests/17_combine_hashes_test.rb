@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../17_combine_hashes'
+require_relative '../Completed/17_combine_hashes'
 
 class CombineHashesTest < Test::Unit::TestCase
   def test_combine_hashes_num

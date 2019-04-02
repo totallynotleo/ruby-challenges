@@ -1,4 +1,4 @@
-require_relative '../19_balanced_number'
+require_relative '../Completed/19_balanced_number'
 require 'test/unit'
 
 

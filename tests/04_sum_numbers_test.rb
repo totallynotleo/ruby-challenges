@@ -1,5 +1,5 @@
 require 'test/unit'
-require_relative '../04_sum_numbers'
+require_relative '../Completed/04_sum_numbers'
 
 class LargestNumberTest < Test::Unit::TestCase
   def test_sum_numbes
