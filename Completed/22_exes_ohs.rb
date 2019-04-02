@@ -33,6 +33,7 @@
 # Expected output: false
 
 def exes_and_ohs(input)
-    mainarray = input.downcase.chars; letters = mainarray.uniq; 
+    mainarray = input.downcase.chars
+    letters = mainarray.uniq
     letters.length != 2 ? false : mainarray.count(letters.first) == mainarray.count(letters.last) ? true : false
 end

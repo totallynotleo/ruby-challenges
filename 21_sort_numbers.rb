@@ -24,8 +24,14 @@
 # Expected output: [2,2,4,5,8]
 
 def sort(num_array)
-    while num_array != num_array.sort
-        num_array.shuffle!
-    end
-    return num_array
+    # while num_array != num_array.sort
+    #     num_array.shuffle!
+    # end
+    # return num_array
+ sorted = false 
+ while sorted == false
+    i = 0
+        
+
+
 end

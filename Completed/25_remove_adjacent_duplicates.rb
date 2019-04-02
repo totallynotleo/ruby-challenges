@@ -14,6 +14,20 @@
 # *E.g.* remove_adjacent_duplicates("abcABCabcABC") should return exactly the same string: "abcABCabcABC"
 
 def remove_adjacent_duplicates(input)
-  input.squeeze
+  array = input.chars
+  index = 0
+  while index < array.length 
+    if array[index] == array[index+1]
+      array.delete_at(index)
+    else 
+      index += 1
+    end
+  end 
+  return array.join
+  # if array.join == input.squeeze
+  #   return array.join
+  # else 
+  #   return input.squeeze
+  # end
 end
 
