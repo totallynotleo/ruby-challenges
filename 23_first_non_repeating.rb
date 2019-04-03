@@ -33,6 +33,7 @@ def first_non_repeating(input)
     first_non_repeating == nil ? false : first_non_repeating
 end
 
+
 # Test your code here
 puts first_non_repeating("aaaabbbcccdeeefgh")
 puts first_non_repeating("wwwhhhggge")
