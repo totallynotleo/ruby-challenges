@@ -31,7 +31,10 @@ def sort(num_array)
  sorted = false 
  while sorted == false
     i = 0
-        
+    errors = 0 
+    while i < (num_array.length - 1)
+        temp = 0
+        if num_array[i] > num
 
 
 end
