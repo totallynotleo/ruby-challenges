@@ -44,8 +44,14 @@
 * 24_isogram
 * 25_remove_adjacent_duplicates
 <<<<<<< HEAD
+<<<<<<< HEAD
 * 26_max_min
 =======
 * 26_max_min
 * 27_in_array_strict
 >>>>>>> d050ff1e9debde4c151e86e164b777a6f194c92e
+=======
+* 26_max_min
+* 27_in_array_strict
+* 28_good_walk
+>>>>>>> d1590d51523066ffed717893428a7f47ddb00feb
