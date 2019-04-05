@@ -43,26 +43,24 @@
 
 # The test with the challenge use rspec
 
+# def shortest_walk(walk)
+#     hashofopposites = {"NORTH" => "SOUTH" , "SOUTH" => "NORTH" , "EAST"  => "WEST" , "WEST"  => "EAST"}
+#     returnarray = []
+#     for each_direction in walk do
+#         if hashofopposites[each_direction] == returnarray[-1]
+#             returnarray.delete_at(-1)
+#         else
+#             returnarray << each_direction
+#         end
+#     end
+#     return returnarray
+# end
+
 def shortest_walk(walk)
     hashofopposites = {"NORTH" => "SOUTH" , "SOUTH" => "NORTH" , "EAST"  => "WEST" , "WEST"  => "EAST"}
     returnarray = []
-    for each_direction in walk do
-        if hashofopposites[each_direction] == returnarray[-1]
-            returnarray.delete_at(-1)
-        else
-            returnarray << each_direction
-        end
-    end
+    walk.each do |direction| { 
+        (hashofopposites[direction] == returnarray[-1]) ? (returnarray.delete_at(-1)) : (returnarray << direction)
+     }
     return returnarray
-end
-
-
-# def shortest_walk(walk)
-#     def dirReduc(arr)
-#         stack = []
-#         arr.each do |dir|
-#           OPPOSITE[dir] == stack.last ? stack.pop : stack.push(dir)
-#         end
-#         stack
-#       end      
-# end
+end 
