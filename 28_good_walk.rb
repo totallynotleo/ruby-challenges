@@ -25,24 +25,28 @@
 # rspec uses a convention that it will run any file in a subdirectory called 'spec' that
 # has a file name ending in _spec.rb
 
-def good_walk(walk)
-  walk.length ==10?(walk.count('n')==walk.count('s')&&walk.count('e')==walk.count('w')? true: false): false
-end
-
 # def good_walk(walk)
-#   checkifback = {northsouth: 0, eastwest: 0}
-#   for each_direction in walk do 
-#     case each_direction
-#     when 'n'
-#       checkifback[:northsouth] += 1
-#     when 's'
-#       checkifback[:northsouth] -= 1 
-#     when 'e'
-#       checkifback[:eastwest] += 1
-#     when 'w'
-#       checkifback[:eastwest] -= 1
-#     end
-#   end
-#   checkifback.sum == 0 ? (return true if walk.length == 10) : false  
+#   walk.length ==10? (walk.count('n')==walk.count('s')&&walk.count('e')==walk.count('w')? true: false): false
 # end
 
+def good_walk(walk)
+  north = []
+  south = []
+  east = []
+  west = []
+  for eachthing in walk do
+    case eachthing 
+    when 'n'
+      north << "n"
+    when 's'
+      south << "s"
+    when
+      east << "e"
+    when
+      west << "w"
+    end
+  end
+  north.length == south.length && east.length == west.length && walk.length == 10 ? true : false
+end
+
+#METHOD WITHOUT HELPERS
