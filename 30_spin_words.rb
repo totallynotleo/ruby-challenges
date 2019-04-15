@@ -15,17 +15,17 @@
 
 # Tests provided use rspec
 
-def spin_words (words)
-    array = words.split(" ")
-    for eachword in array do
-        eachword = eachword.reverse! if eachword.length >= 5
-    end
-    return array.join(" ")
-end
-
-# Trying to get it to work in less lines but it didn't because curly bois hate me.
 # def spin_words (words)
 #     array = words.split(" ")
-#     array.each do |eachword| {eachword.length >= 5 ? eachword = eachword.reverse! : eachword = eachword}
+#     for eachword in array do
+#         eachword = eachword.reverse! if eachword.length >= 5
+#     end
 #     return array.join(" ")
 # end
+
+# Trying to get it to work in less lines but it didn't because curly bois hate me.
+def spin_words (words)
+    array = words.split(" ")
+    array.each { |eachword| eachword.length >= 5 ? eachword = eachword.reverse! : eachword = eachword}
+    return array.join(" ")
+end
