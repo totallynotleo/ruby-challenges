@@ -25,10 +25,11 @@
 # rspec uses a convention that it will run any file in a subdirectory called 'spec' that
 # has a file name ending in _spec.rb
 
-# def good_walk(walk)
-#   walk.length ==10? (walk.count('n')==walk.count('s')&&walk.count('e')==walk.count('w')? true: false): false
-# end
+def good_walk(walk)
+  walk.length ==10? (walk.count('n')==walk.count('s')&&walk.count('e')==walk.count('w')? true: false): false
+end
 
+#WITH ARRAYS ONLY
 def good_walk(walk)
   north = []
   south = []

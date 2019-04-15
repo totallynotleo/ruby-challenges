@@ -10,7 +10,7 @@ class Drink #creates a drink class with a few variables
   def margin
     return cost-make_cost #simple calculation to determine profit margin
   end
-  
+
   def add_one (ordered, drinklog) #takes the drink and the drinklog and adds 1 to the value in the hash
     drinklog[ordered] += 1 
   end 

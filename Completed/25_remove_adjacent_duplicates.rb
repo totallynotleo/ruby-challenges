@@ -19,6 +19,7 @@ def remove_adjacent_duplicates(input)
   while index < array.length 
     if array[index] == array[index+1]
       array.delete_at(index)
+      index += 1 
     else 
       index += 1
     end
@@ -31,3 +32,6 @@ def remove_adjacent_duplicates(input)
   # end
 end
 
+def remove_adjacent_duplicates(string)
+  string.squeeze
+end
