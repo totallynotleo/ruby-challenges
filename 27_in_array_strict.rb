@@ -31,10 +31,15 @@
 # end
 
 #METHOD WITHOUT HELPERS
+# def in_array_strict? (string, arr, strict)
+#   for each_element in arr do
+#     return true if (strict ? each_element : each_element.downcase) == (strict ? string : string.downcase)  
+#   end 
+#   return false 
+# end
+
 def in_array_strict? (string, arr, strict)
-  for each_element in arr do
-    return true if (strict ? each_element : each_element.downcase) == (strict ? string : string.downcase)  
-  end 
+  arr.each { |each_element| return true if (strict ? each_element : each_element.downcase) == (strict ? string : string.downcase)}
   return false 
 end
 

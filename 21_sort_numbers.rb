@@ -24,18 +24,17 @@
 # Expected output: [2,2,4,5,8]
 
 def sort(num_array)
-    while num_array != num_array.sort
-        num_array.shuffle!
+
+    num_array.length.times do
+        index = 0
+        num_array.length.times do
+            (num_array[index], num_array[index + 1] = num_array[index + 1], num_array[index] )if num_array[index] > num_array[index + 1]       
+        (index += 1) if (index < num_array.length - 2)
+        end
     end
     return num_array
-#  sorted = false 
-#  while sorted == false
-#     i = 0
-#     errors = 0 
-#     while i < (num_array.length - 1)
-#         temp = 0
-#         if num_array[i] > num_array[i+1]
-            
-#         end 
-
+    while num_array != num_array.sort
+    #     num_array.shuffle!
+    # end
+    # return num_array
 end
