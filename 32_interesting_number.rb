@@ -22,13 +22,10 @@ def interesting_number(number)
     return number.to_s.split("")[0] < number.to_s.split("")[-1] ? number.to_s.split("").sort == number.to_s.split("") || false : number.to_s.split("").sort.reverse == number.to_s.split("") || false
 end
 
-#RHYS' SOLUTION I'M UNASHAMEDLY STEALING FROM 
-# def interesting_number(number)
-#     return false if number.to_s.length < 3
-#     array = number.to_s.split('')
-#     if array.sort[0] == "0"
-#         array.delete_at(0)
-#         array.push("0")
-#     end
-#     return array[0] < array[-1] ? array.sort == array || false : array.sort.reverse == array || false
-# end
+def interesting_number(number)
+    number_in_array = number.to_s
+    if number_in_array.length < 3 
+        return false 
+    else 
+
+end
