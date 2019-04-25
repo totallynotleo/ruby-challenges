@@ -50,7 +50,5 @@
 * 30_spin_words
 * 31_missing_letter
 * 32_interesting_number
-<<<<<<< HEAD
-=======
 * 33_digital_root
->>>>>>> a1edc1cb97d785270c514b06416370cd6afc49a5
+* 34_prime_number
