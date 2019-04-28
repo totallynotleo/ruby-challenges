@@ -52,3 +52,8 @@
 * 32_interesting_number
 * 33_digital_root
 * 34_prime_number
+<<<<<<< HEAD
+=======
+* 35_group_by_owners
+* 36_binary_flip
+>>>>>>> 31064837b33fcd3ad460b3f00bd28aa55440e052
